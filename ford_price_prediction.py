@@ -39,7 +39,7 @@ df = user_input_features()
 st.subheader('User Input parameters')
 st.write(df)
 
-loaded_model = pickle.load(open("ford_price_prediction_model.h5", "rb"))
+loaded_model = pickle.load(open("ford_price_prediction_unscale_model.h5", "rb"))
 
 prediction = loaded_model.predict(df)
 
