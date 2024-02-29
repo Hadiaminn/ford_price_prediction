@@ -20,7 +20,7 @@ def user_input_features():
     st.write('The Transmission are 0=Automatic, 1=Manual, 2=Semi-Auto=')
     transmission = st.sidebar.selectbox ('Select transmission type',[0,1,2])
 
-    mileage = st.sidebar.slider('Mileage', 1.0, 177644.0, 15.0)
+    mileage = st.sidebar.slider('Mileage', 100.0, 177644.0, 15.0)
     
     st.write('The Fuel Type are 0=Diesel, 1=Electric, 2=Hybrid, 3=Other, 4=Petrol')
     fuelType = st.sidebar.selectbox ('Select Fuel type',[0,1,2,3,4])
