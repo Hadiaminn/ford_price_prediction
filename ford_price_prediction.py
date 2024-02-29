@@ -28,12 +28,12 @@ def user_input_features():
     engineSize = st.sidebar.slider('Engine Size', 0.0, 5.0, 1.0)
     
     data = {
-        'Model':model,
-        'Year': year,
-        'Transmission': transmission,
-        'Mileage': mileage,
-        'Fuel Type' : fuelType,
-        'Engine Size': engineSize
+        'model':model,
+        'year': year,
+        'transmission': transmission,
+        'mileage': mileage,
+        'fuelType' : fuelType,
+        'engineSize': engineSize
         }
     features = pd.DataFrame(data, index=[0])
     return features
