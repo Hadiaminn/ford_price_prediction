@@ -23,7 +23,7 @@ def user_input_features():
     mileage = st.sidebar.slider('Mileage', 1.0, 177644.0, 15.0)
     
     st.write('The Fuel Type are 0=Diesel, 1=Electric, 2=Hybrid, 3=Other, 4=Petrol')
-    fuelType = st.sidebar.selectbox ('Select transmission type',[0,1,2,3,4])
+    fuelType = st.sidebar.selectbox ('Select Fuel type',[0,1,2,3,4])
     
     engineSize = st.sidebar.slider('Engine Size', 0.0, 5.0, 1.0)
     
