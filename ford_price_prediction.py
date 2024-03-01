@@ -19,12 +19,12 @@ model_mapping = {
 }
 
 # Dictionary to map displayed transmission names to encoded values
-transmission_mapping = {
-    'Automatic':0, 'Manual':1, 'Semi-Automatic':2}
+#transmission_mapping = {
+#    'Automatic':0, 'Manual':1, 'Semi-Automatic':2}
 
 # Dictionary to map displayed fuel names to encoded values
-fuelType_mapping = {
-    'Diesel':0, 'Electric':1, 'Hybrid':2, 'Other':3, 'Petrol':4}
+#fuelType_mapping = {
+#    'Diesel':0, 'Electric':1, 'Hybrid':2, 'Other':3, 'Petrol':4}
 
 st.write("""
 # Ford Car Price Prediction App
@@ -39,15 +39,18 @@ def user_input_features():
     model = st.sidebar.selectbox ('Select car model',list(model_mapping.keys()))
 
     #st.write('The Year are 0=1996, 1=1998, 2=2000, 3=2002, 4=2003, 5=2004, 6=2005, 7=2006, 8=2007, 9=2008, 10=2009, 11=2010, 12=2011, 13=2012, 14=2013,15=2014, 16=2015, 17=2016, 18=2017, 19=2018,20=2019, 21=2020')
-    year = st.sidebar.selectbox ('Selec year of registration',list(year_mapping.keys()))
+    #year = st.sidebar.selectbox ('Select year of registration',list(year_mapping.keys()))
+    year = st.sidebar.selectbox ('Select year of registration',[0,1,2,3,4,5,6,7,8,9,10,1,12,13,4,15,16,17,18,19,20,21])
     
     #st.write('The Transmission are 0=Automatic, 1=Manual, 2=Semi-Auto=')
-    transmission = st.sidebar.selectbox ('Select transmission type',list(transmission_mapping.keys()))
+    #transmission = st.sidebar.selectbox ('Select transmission type',list(transmission_mapping.keys()))
+    transmission = st.sidebar.selectbox ('Select transmission type',[0,1,2])
 
     mileage = st.sidebar.slider('Mileage', 1.0, 177644.0, 15.0)
     
     #st.write('The Fuel Type are 0=Diesel, 1=Electric, 2=Hybrid, 3=Other, 4=Petrol')
-    fuelType = st.sidebar.selectbox ('Select Fuel type',list(fuelType_mapping.keys()))
+    #fuelType = st.sidebar.selectbox ('Select Fuel type',list(fuelType_mapping.keys()))
+    fuelType = st.sidebar.selectbox ('Select Fuel type',[0,1,2,3,4])
     
     engineSize = st.sidebar.slider('Engine Size', 0.0, 5.0, 1.0)
     
