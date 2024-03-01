@@ -12,11 +12,11 @@ import pickle
 #}
 
 # Dictionary to map displayed year values to encoded values
-year_mapping = {
-    '1996': 0, '1998': 1, '2000': 2, '2002': 3, '2003': 4, '2004': 5,
-    '2005': 6, '2006': 7, '2007': 8, '2008': 9, '2009': 10, '2010': 11,
-    '2011': 12, '2012': 13, '2013': 14, '2014': 15, '2015': 16, '2016': 17,
-    '2017': 18, '2018': 19, '2019': 20, '2020': 21}
+#year_mapping = {
+#    '1996': 0, '1998': 1, '2000': 2, '2002': 3, '2003': 4, '2004': 5,
+#    '2005': 6, '2006': 7, '2007': 8, '2008': 9, '2009': 10, '2010': 11,
+#    '2011': 12, '2012': 13, '2013': 14, '2014': 15, '2015': 16, '2016': 17,
+#    '2017': 18, '2018': 19, '2019': 20, '2020': 21}
 
 # Dictionary to map displayed transmission names to encoded values
 #transmission_mapping = {
@@ -40,8 +40,8 @@ def user_input_features():
     model = st.sidebar.selectbox ('Select car model',[0,1,2,3,4,5,6,7,8,9,10,1,12,13,4,15,16,17,18,19,20,21,22])
 
     #st.write('The Year are 0=1996, 1=1998, 2=2000, 3=2002, 4=2003, 5=2004, 6=2005, 7=2006, 8=2007, 9=2008, 10=2009, 11=2010, 12=2011, 13=2012, 14=2013,15=2014, 16=2015, 17=2016, 18=2017, 19=2018,20=2019, 21=2020')
-    year = st.sidebar.selectbox ('Select year of registration',list(year_mapping.keys()))
-    #year = st.sidebar.selectbox ('Select year of registration',[0,1,2,3,4,5,6,7,8,9,10,1,12,13,4,15,16,17,18,19,20,21])
+    #year = st.sidebar.selectbox ('Select year of registration',list(year_mapping.keys()))
+    year = st.sidebar.selectbox ('Select year of registration',[0,1,2,3,4,5,6,7,8,9,10,1,12,13,4,15,16,17,18,19,20,21])
     
     #st.write('The Transmission are 0=Automatic, 1=Manual, 2=Semi-Auto=')
     #transmission = st.sidebar.selectbox ('Select transmission type',list(transmission_mapping.keys()))
