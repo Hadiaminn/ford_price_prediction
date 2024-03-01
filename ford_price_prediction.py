@@ -2,13 +2,6 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-# Dictionary to map displayed year values to encoded values
-year_mapping = {
-    '1996': 0, '1998': 1, '2000': 2, '2002': 3, '2003': 4, '2004': 5,
-    '2005': 6, '2006': 7, '2007': 8, '2008': 9, '2009': 10, '2010': 11,
-    '2011': 12, '2012': 13, '2013': 14, '2014': 15, '2015': 16, '2016': 17,
-    '2017': 18, '2018': 19, '2019': 20, '2020': 21}
-
 # Dictionary to map displayed model names to encoded values
 model_mapping = {
     'B-MAX': 0, 'C-MAX': 1, 'EcoSport': 2, 'Edge': 3, 'Escort': 4, 'Fiesta': 5,
@@ -17,6 +10,13 @@ model_mapping = {
     'Ranger': 17, 'S-MAX': 18, 'Streetka': 19, 'Tourneo Connect': 20, 'Tourneo Custom': 21,
     'Transit Tourneo': 22
 }
+
+# Dictionary to map displayed year values to encoded values
+year_mapping = {
+    '1996': 0, '1998': 1, '2000': 2, '2002': 3, '2003': 4, '2004': 5,
+    '2005': 6, '2006': 7, '2007': 8, '2008': 9, '2009': 10, '2010': 11,
+    '2011': 12, '2012': 13, '2013': 14, '2014': 15, '2015': 16, '2016': 17,
+    '2017': 18, '2018': 19, '2019': 20, '2020': 21}
 
 # Dictionary to map displayed transmission names to encoded values
 #transmission_mapping = {
