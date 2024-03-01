@@ -36,7 +36,7 @@ st.sidebar.header('User Input Parameters')
 
 def user_input_features():
     #st.write('The Model are 0=B-MAX, 1=C-MAX, 2=EcoSport, 3=Edge, 4=Escort, 5=Fiesta, 6=Focus, 7=Fusion, 8=Galaxy, 9=Grand C-MAX, 10=Grand Tourneo Connect, 11=KA, 12=Ka+, 13=Kuga, 14=Mondeo,15=Mustang, 16=Puma, 17=Ranger, 18=S-MAX, 19=Streetka,20=Tourneo Connect, 21=Tourneo Custom, 22=Transit Tourneo')
-    model = st.sidebar.selectbox ('Select car model',list(model_mapping.keys()))
+    model = st.sidebar.selectbox ('Select car model',list(model_mapping.values()))
 
     #st.write('The Year are 0=1996, 1=1998, 2=2000, 3=2002, 4=2003, 5=2004, 6=2005, 7=2006, 8=2007, 9=2008, 10=2009, 11=2010, 12=2011, 13=2012, 14=2013,15=2014, 16=2015, 17=2016, 18=2017, 19=2018,20=2019, 21=2020')
     #year = st.sidebar.selectbox ('Select year of registration',list(year_mapping.keys()))
