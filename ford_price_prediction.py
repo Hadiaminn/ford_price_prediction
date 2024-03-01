@@ -23,7 +23,7 @@ transmission_mapping = {
     'Automatic':0, 'Manual':1, 'Semi-Automatic':2}
 
 # Dictionary to map displayed fuel names to encoded values
-fuel_mapping = {
+fuelType_mapping = {
     'Diesel':0, 'Electric':1, 'Hybrid':2, 'Other':3, 'Petrol':4}
 
 st.write("""
@@ -47,7 +47,7 @@ def user_input_features():
     mileage = st.sidebar.slider('Mileage', 1.0, 177644.0, 15.0)
     
     #st.write('The Fuel Type are 0=Diesel, 1=Electric, 2=Hybrid, 3=Other, 4=Petrol')
-    fuelType = st.sidebar.selectbox ('Select Fuel type',list(fuel_mapping.keys()))
+    fuelType = st.sidebar.selectbox ('Select Fuel type',list(fuelType_mapping.keys()))
     
     engineSize = st.sidebar.slider('Engine Size', 0.0, 5.0, 1.0)
     
